@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arcane</title>
+  <link rel="stylesheet" href="style">
+  <style>
+    body {
+      background: #0b0c2a;
+    }
+    h4 {
+      text-align: center;
+      color: #96BB54;
+    }
+    .contenedor {
+      text-align: center;
+    }
+    #videoFrame {
+      border-radius: 12px;
+    }
+    .responsive-iframe-container {
+      aspect-ratio: 16 / 9;
+      max-width: 980px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .responsive-iframe-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      border-radius: 12px;
+    }
+    .tempo,
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin: 10px auto;
+      max-width: 100%;
+      padding: 0 10px;
+    }
+    .boton {
+      display: inline-block;
+      padding: 10px 16px;
+      font-size: 14px;
+      text-align: center;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      min-width: 80px;
+      flex: 1 1 auto;
+      margin: 10px;
+    }
+    .boton.activa {
+      background-color: #e67e22;
+    }
+    .boton.anterior,
+    .boton.siguiente {
+      background-color: #34495e;
+    }
+    .boton:hover {
+      background-color: #1abc9c;
+    }
+    @media (max-width: 600px) {
+      .boton {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h4 id="titulo">Arcane</h4>
+
+  <div class="responsive-iframe-container">
+    <iframe id="videoFrame" src="https://geo.dailymotion.com/player.html?video=x8x42ns" allowfullscreen></iframe>
+  </div>
+
+  <div class="tempo">
+    <a href="#" id="btnTemp1" class="boton menu" onclick="mostrarTemporada(1)">Temporada 1</a>
+    <a href="#" id="btnTemp2" class="boton menu" onclick="mostrarTemporada(2)">Temporada 2</a>
+  </div>
+
+  <div id="temporada1" class="contenedor">
+    <a href="../index.html" class="boton ep">Películas</a>
+    <div id="episodios1"></div>
+    <div class="navegacion">
+      <a href="#" class="boton anterior" onclick="cambiarPagina(1, -1)">⟨ Anterior</a>
+      <a href="#" class="boton siguiente" onclick="cambiarPagina(1, 1)">Siguiente ⟩</a>
+    </div>
+  </div>
+
+  <div id="temporada2" class="contenedor" style="display:none;">
+    <a href="../index.html" class="boton ep">Películas</a>
+    <div id="episodios2"></div>
+    <div class="navegacion">
+      <a href="#" class="boton anterior" onclick="cambiarPagina(2, -1)">⟨ Anterior</a>
+      <a href="#" class="boton siguiente" onclick="cambiarPagina(2, 1)">Siguiente ⟩</a>
+    </div>
+  </div>
+
+<script>
+  const episodioPorPagina = 6;
+  const paginaActual = { 1: 0, 2: 0 };
+
+  const enlaces = {
+        // Temporada 1
+        1: "https://www.tokyvideo.com/es/embed/487417",
+        2: "https://www.tokyvideo.com/es/embed/487434",
+        // ...
+        3: "https://www.tokyvideo.com/es/embed/487501",
+        4: "https://www.tokyvideo.com/es/embed/487514",
+        5: "https://www.tokyvideo.com/es/embed/487559",
+        6: "https://www.tokyvideo.com/es/embed/493924",
+        7: "https://www.tokyvideo.com/es/embed/493940",
+        8: "https://www.tokyvideo.com/es/embed/493947",
+        9: "https://www.tokyvideo.com/es/embed/493961",
+        //Temporada 2
+        10: "https://www.tokyvideo.com/es/embed/627277",
+        11: "https://www.tokyvideo.com/es/embed/627281",
+        12: "https://www.tokyvideo.com/es/embed/627283",
+        13: "https://www.tokyvideo.com/es/embed/626928",
+        14: "https://www.tokyvideo.com/es/embed/626979",
+        15: "https://www.tokyvideo.com/es/embed/626984",
+        16: "https://www.tokyvideo.com/es/embed/626989",
+        17: "https://www.tokyvideo.com/es/embed/626996",
+        18: "https://www.tokyvideo.com/es/embed/627181",
+        
+        
+        // ... agrega más enlaces según episodios
+      };
+      
+      function generarBotones() {
+    const contenedor1 = document.getElementById("episodios1");
+    const contenedor2 = document.getElementById("episodios2");
+
+    for (let i = 1; i <= 9; i++) {
+      const btn = document.createElement("a");
+      btn.href = "#";
+      btn.className = "boton ep";
+      btn.textContent = `Ep ${String(i).padStart(2, '0')}`;
+      btn.onclick = () => cargarEpisodio(i);
+      contenedor1.appendChild(btn);
+    }
+
+    for (let i = 10; i <= 18; i++) {
+      const btn = document.createElement("a");
+      btn.href = "#";
+      btn.className = "boton ep";
+      btn.textContent = `Ep ${String(i - 9).padStart(2, '0')}`;
+      btn.onclick = () => cargarEpisodio(i);
+      contenedor2.appendChild(btn);
+    }
+  }
+
+  function mostrarTemporada(num) {
+    document.getElementById("temporada1").style.display = num === 1 ? "block" : "none";
+    document.getElementById("temporada2").style.display = num === 2 ? "block" : "none";
+    document.getElementById("titulo").textContent = `Arcane - Temporada ${num}`;
+    paginaActual[num] = 0;
+    actualizarBotones(num);
+    document.querySelectorAll(".boton.menu").forEach(btn => btn.classList.remove("activa"));
+  document.getElementById(`btnTemp${num}`).classList.add("activa");
+  }
+
+  function cargarEpisodio(num) {
+    const iframe = document.getElementById("videoFrame");
+    const tempNum = num <= 9 ? 1 : 2;
+    const epNum = tempNum === 1 ? num : num - 9;
+    iframe.src = enlaces[num];
+    document.getElementById("titulo").textContent = `Arcane T${tempNum} Ep ${epNum}`;
+  }
+
+  function actualizarBotones(temporada) {
+    const contenedor = document.getElementById(`episodios${temporada}`);
+    const botones = contenedor.querySelectorAll(".boton.ep");
+    const total = botones.length;
+    const inicio = paginaActual[temporada] * episodioPorPagina;
+    const fin = inicio + episodioPorPagina;
+
+    botones.forEach((btn, i) => {
+      btn.style.display = i >= inicio && i < fin ? "inline-block" : "none";
+    });
+
+    const nav = document.querySelector(`#temporada${temporada} .navegacion`);
+    nav.querySelector(".anterior").style.display = paginaActual[temporada] > 0 ? "inline-block" : "none";
+    nav.querySelector(".siguiente").style.display = fin < total ? "inline-block" : "none";
+  }
+
+  function cambiarPagina(temporada, direccion) {
+    const contenedor = document.getElementById(`episodios${temporada}`);
+    const totalBotones = contenedor.querySelectorAll(".boton.ep").length;
+    const maxPaginas = Math.ceil(totalBotones / episodioPorPagina);
+
+    const nuevaPagina = paginaActual[temporada] + direccion;
+    if (nuevaPagina >= 0 && nuevaPagina < maxPaginas) {
+      paginaActual[temporada] = nuevaPagina;
+      actualizarBotones(temporada);
+    }
+  }
+
+  window.onload = () => {
+    generarBotones();
+    mostrarTemporada(1);
+  };
+</script>
+
+</body>
+
+</html>

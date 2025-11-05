@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Películas</title>
+  <style>
+    body {
+      background: #0b0c2a;
+    }
+    h4 {
+      text-align: center;
+      color: #96BB54;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+   .pelicula {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 33.33%; /* por defecto: 3 columnas en móviles y tablets verticales */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 0.4s ease forwards;
+}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 1024px) {
+  .pelicula {
+    width: 20%; /* laptops y PCs: 5 columnas */
+  }
+}
+
+
+   .pelicula img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  /* mantiene proporción vertical */
+  object-fit: cover;
+  border-radius: 10px;
+}
+    .pelicula .info {
+      padding: 10px;
+    }
+    .buscador {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+    .fecha {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: rgba(150, 187, 84, 0.9);
+  color: #0b0c2a;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #96BB54;
+  color: #0b0c2a;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #7fa944;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  width: 220px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  background: linear-gradient(145deg, #1e274f, #2b3560);
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  animation: fadeInUp 0.4s ease forwards;
+  opacity: 0;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#menu .filtro {
+  background: linear-gradient(to right, #96BB54, #b6d86f);
+  color: #0b0c2a;
+  border: none;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 8px 0;
+  display: block;
+  width: 100%;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#menu .filtro:hover {
+  background: linear-gradient(to right, #7fa944, #a3c85d);
+  transform: translateX(4px);
+}
+#menu .filtro:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+#filtroAnios button {
+  background-color: #96BB54;
+  color: #0b0c2a;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#filtroAnios button:hover {
+  background-color: #7fa944;
+  transform: scale(1.05);
+}
+
+#filtroAnios button.active {
+  background-color: #7fa944;
+}
+.bandera {
+  position: absolute;
+  top: 6px !important;
+  right: 6px !important;
+  width: 17px !important;
+  height: 17px !important;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.4);
+  object-fit: cover;
+  z-index: 2;
+}
+
+  </style>
+</head>
+<body>
+  <div style="display: flex; align-items: center;">
+  <div id="menuToggle" style="margin: 10px; cursor: pointer;">
+    <img src="jpg/images.png" alt="Menú" width="30" height="30">
+  </div>
+  <input type="search" id="buscador" class="buscador" placeholder="Buscar películas..." style="flex: 1;">
+</div>
+<div id="filtroAnios" style="overflow-x: auto; white-space: nowrap; padding: 10px; margin: 10px 0;">
+ <!-- Los bolotones se insertarán dinámicamente -->
+</div>
+
+<div id="menu" style="display: none; padding: 10px; background: #19204a; color: #fff;">
+  <button class="filtro" data-genero="todos">Todos</button>
+  <button class="filtro" data-genero="peliculas">Películas</button>
+  <button class="filtro" data-genero="series">Series</button>
+  <button class="filtro" data-genero="animes">Animes</button>
+  <button class="filtro" data-genero="accion">Acción</button>
+  <button class="filtro" data-genero="comedia">Comedia</button>
+  <button class="filtro" data-genero="terror">Terror</button>
+  <button class="filtro" data-genero="drama">Drama</button>
+  <button class="filtro" data-genero="aventura">Aventura</button>
+  <button class="filtro" data-genero="fantasia">Fantasia</button>
+  <button class="filtro" data-genero="crimen">Crimen</button>
+  <button class="filtro" data-genero="suspenso">Suspenso</button>
+  <button class="filtro" data-genero="romance">Romance</button>
+  <button class="filtro" data-genero="misterio">Misterio</button>
+   <button class="filtro" data-genero="ciencia ficcion">Ciencia ficción</button>
+</div>
+
+  <div class="galeria" id="galeria"></div>
+  <div style="text-align: center; margin: 20px;">
+    <button id="anterior">Anterior</button>
+    <button id="siguiente">Siguiente</button>
+  </div>
+
+<script>
+  const buscador = document.getElementById('buscador');
+  const galeria = document.getElementById('galeria');
+  const btnAnterior = document.getElementById('anterior');
+  const btnSiguiente = document.getElementById('siguiente');
+
+  let peliculas = [];
+  let paginaActual = 1;
+  const porPagina = window.innerWidth >= 1024 ? 40 : 21;
+  let peliculasFiltradas = [];
+
+  fetch("peliculas.json")
+  .then(res => res.json())
+  .then(data => {
+    peliculas = data;
+    peliculasFiltradas = peliculas;
+    generarBotonesAnios(); // ✅ nuevo
+    mostrarPeliculas();
+    });
+
+  function mostrarPeliculas() {
+    galeria.innerHTML = "";
+
+    const inicio = (paginaActual - 1) * porPagina;
+    const fin = inicio + porPagina;
+    const lista = peliculasFiltradas.slice(inicio, fin);
+
+    if (lista.length === 0) return;
+
+    lista.forEach((p, i) => {
+  const div = document.createElement("div");
+  div.classList.add("pelicula");
+  div.style.animationDelay = `${i * 0.05}s`;
+  div.innerHTML = `
+  <a href="${p.url}" target="_self" style="display: block;">
+    <div style="position: relative;">
+      <img src="${p.imagen}" alt="${p.titulo}">
+      <div class="fecha">${p.fecha}</div>
+      <img class="bandera" src="banderas/${p.idioma}.png" alt="${p.idioma}">
+    </div>
+  </a>
+  <div class="info">
+    <h4>${p.titulo}</h4>
+  </div>
+`;
+
+  galeria.appendChild(div);
+});
+
+    actualizarBotones();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function actualizarBotones() {
+    const totalPaginas = Math.ceil(peliculasFiltradas.length / porPagina);
+    btnAnterior.disabled = paginaActual === 1;
+    btnSiguiente.disabled = paginaActual === totalPaginas;
+  }
+
+  buscador.addEventListener("input", () => {
+  paginaActual = 1;
+  filtrarPeliculas();
+});
+
+function filtrarPeliculas() {
+  const buscar = buscador.value.toLowerCase().trim();
+
+  peliculasFiltradas = peliculas.filter(p => {
+    const coincideTexto = buscar === "" || p.titulo.toLowerCase().includes(buscar);
+
+    // Si hay texto en el buscador, ignorar filtros de género y año
+    if (buscar !== "") {
+      return coincideTexto;
+    }
+
+    const coincideGenero =
+      generoActivo === "todos" ||
+      (Array.isArray(p.genero) && p.genero.map(g => g.toLowerCase()).includes(generoActivo)) ||
+      (typeof p.genero === "string" && p.genero.toLowerCase() === generoActivo);
+
+    const coincideAnio = anioActivo === "todos" || p.fecha === anioActivo;
+
+    return coincideTexto && coincideGenero && coincideAnio;
+  });
+
+  mostrarPeliculas();
+}
+
+
+  btnAnterior.addEventListener("click", () => {
+    if (paginaActual > 1) {
+      paginaActual--;
+      mostrarPeliculas();
+    }
+  });
+
+  btnSiguiente.addEventListener("click", () => {
+    const totalPaginas = Math.ceil(peliculasFiltradas.length / porPagina);
+    if (paginaActual < totalPaginas) {
+      paginaActual++;
+      mostrarPeliculas();
+    }
+  });
+  let generoActivo = "todos";
+document.getElementById("menuToggle").addEventListener("click", () => {
+  const menu = document.getElementById("menu");
+  menu.style.display = menu.style.display === "none" ? "block" : "none";
+});
+document.addEventListener("click", (event) => {
+  const menu = document.getElementById("menu");
+  const toggle = document.getElementById("menuToggle");
+
+  // Verifica si el clic fue fuera del menú y del botón de toggle
+  if (
+    menu.style.display === "block" &&
+    !menu.contains(event.target) &&
+    !toggle.contains(event.target)
+  ) {
+    menu.style.display = "none";
+  }
+});
+
+document.querySelectorAll(".filtro").forEach(btn => {
+  btn.addEventListener("click", () => {
+    generoActivo = btn.dataset.genero;
+    activarBotonGenero(generoActivo);
+    paginaActual = 1;
+    filtrarPeliculas(); // ✅ usa la función combinada
+  });
+});
+
+function activarBotonGenero(genero) {
+  document.querySelectorAll(".filtro").forEach(btn => {
+    btn.style.backgroundColor = btn.dataset.genero === genero ? "#7fa944" : "#96BB54";
+  });
+}
+
+let anioActivo = "todos";
+function generarBotonesAnios() {
+  const contenedor = document.getElementById("filtroAnios");
+  const anios = [...new Set(peliculas.map(p => p.fecha))].sort((a, b) => b - a); // orden descendente
+
+  contenedor.innerHTML = `<button data-anio="todos">Todos</button>`;
+  anios.forEach(anio => {
+    const btn = document.createElement("button");
+    btn.textContent = anio;
+    btn.dataset.anio = anio;
+    contenedor.appendChild(btn);
+  });
+
+  document.querySelectorAll("#filtroAnios button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      anioActivo = btn.dataset.anio;
+      activarBotonAnio(anioActivo);
+      paginaActual = 1;
+      filtrarPeliculas();
+    });
+  });
+}
+
+function activarBotonAnio(anio) {
+  document.querySelectorAll("#filtroAnios button").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.anio === anio);
+  });
+}
+
+</script>
+</body>
+
+</html>

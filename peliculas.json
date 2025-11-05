@@ -1,0 +1,754 @@
+[
+    {
+    "titulo": "Academia de villanos",
+    "imagen": "jpg/33.jpg",
+    "url": "pelicula /6.html",
+    "fecha": "2025",
+      "idioma": "la",
+    "genero": ["comedia", "peliculas"]
+  },
+  {
+    "titulo": "Spermageddon",
+    "imagen": "jpg/30.jpg",
+    "url": "pelicula /3.html",
+    "fecha": "2025",
+    "idioma": "es",
+    "genero": ["aventura", "animes", "peliculas", "comedia", "fantasia"]
+  },
+  {
+    "titulo": "El cuento del lobo",
+    "imagen": "jpg/25.jpg",
+    "url": "peliculas anime/lobo.html",
+    "fecha": "2025",
+     "idioma": "es",
+    "genero": ["misterio", "suspenso", "peliculas"]
+  },
+    {
+    "titulo": "¡Cariño, no!",
+    "imagen": "jpg/24.jpg",
+    "url": "peliculas anime/cariño.html",
+    "fecha": "2025",
+     "idioma": "la",
+    "genero": ["comedia", "crimen", "peliculas"]
+  },
+  {
+    "titulo": "MEGAN 2.0",
+    "imagen": "jpg/megan.jpg",
+    "url": "peliculas anime/megan.html",
+    "fecha": "2025",
+      "idioma": "la",
+    "genero": ["peliculas", "accion", "suspenso"]
+  },
+  {
+    "titulo": "Como entrenar a tu dragón",
+    "imagen": "jpg/dragón.jpg",
+    "url": "peliculas anime/dragon.html",
+    "fecha": "2025",
+      "idioma": "la",
+    "genero": ["peliculas", "accion", "fantasia"]
+  },
+  {
+    "titulo": "Karate Kid: Legends",
+    "imagen": "jpg/12.jpg",
+    "url": "peliculas anime/karate.html",
+    "fecha": "2025",
+      "idioma": "la",
+    "genero": ["acción", "películas", "drama", "aventura"]
+  },
+  {
+    "titulo": "Rider",
+    "imagen": "jpg/23.jpg",
+    "url": "peliculas anime/rider.html",
+    "fecha": "2025",
+     "idioma": "es",
+     "genero": ["accion", "drama", "peliculas", "suspenso"]
+  },
+   {
+    "titulo": "El Conjuro 4 - Últimos ritos",
+    "imagen": "jpg/22.jpg",
+    "url": "peliculas anime/warrren.html",
+    "fecha": "2025",
+     "idioma": "la",
+     "genero": ["terror", "peliculas"]
+  },
+    {
+    "titulo": "Peter Pan: Pesadilla en Nunca Jamás",
+    "imagen": "jpg/13.jpg",
+    "url": "peliculas anime/piter.html",
+    "fecha": "2025",
+     "idioma": "la",
+     "genero": ["suspenso", "fantasia", "peliculas", "terror"]
+  },
+    {
+    "titulo": "Un cuento de pescadores",
+    "imagen": "jpg/14.jpg",
+    "url": "peliculas anime/Un cuent.html",
+    "fecha": "2025",
+     "idioma": "la",
+     "genero": ["fantasia", "terror", "peliculas"]
+  },
+  {
+    "titulo": "La muerte de un unicornio",
+    "imagen": "jpg/16.jpg",
+    "url": "peliculas anime/muerte.html",
+    "fecha": "2025",
+     "idioma": "la",
+     "genero": ["comedia", "fantasia", "peliculas", "terror"]
+  },
+    {
+    "titulo": "28 años después",
+    "imagen": "jpg/17.jpg",
+    "url": "peliculas anime/años después.html",
+    "fecha": "2025",
+     "idioma": "la",
+     "genero": ["suspenso", "terror", "peliculas"]
+  },
+    {
+    "titulo": "El asesino con ojos de corazón",
+    "imagen": "jpg/18.jpg",
+    "url": "peliculas anime/el asesino.html",
+    "fecha": "2025",
+     "idioma": "la",
+     "genero": ["comedia", "romance", "peliculas", "terror"]
+  },
+  {
+    "titulo": "Hook",
+    "imagen": "jpg/19.jpg",
+    "url": "peliculas anime/Hook.html",
+    "fecha":"2025",
+    "idioma": "la",
+     "genero": ["terror", "peliculas"]
+  },
+  {
+    "titulo": "Las guerreras k-pop",
+    "imagen": "jpg/kpop.jpg",
+    "url": "peliculas anime/kpop.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["accion", "animes", "peliculas", "comedia", "fantasia"]
+  },
+  {
+    "titulo": "Kaiju No. 8: Misión de reconocimiento",
+    "imagen": "jpg/Kaiju No 8.jpg",
+    "url": "peliculas anime/Kaiju No 8.html",
+    "fecha": "2025",
+      "idioma": "la",
+    "genero": ["accion", "animes", "peliculas"]
+  },
+  {
+    "titulo": "Kayara. La guerrera del imperio Inca",
+    "imagen": "jpg/Kayar..jpg",
+    "url": "peliculas anime/Kayara.html",
+    "fecha": "2025",
+     "idioma": "la",
+    "genero": ["animes", "peliculas", "aventura"]
+  },
+  {
+    "titulo": "La creación de los dioses 2: Fuerza demoníaca",
+    "imagen": "jpg/20.jpg",
+    "url": "peliculas anime/La creación.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["accion", "fantasia", "peliculas"]
+  },
+  {
+    "titulo": "King Ivory",
+    "imagen": "jpg/21.jpg",
+    "url": "peliculas anime/King Ivory.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["crimen", "drama", "peliculas", "suspenso"]
+  },
+  {
+    "titulo": "Haz que regrese",
+    "imagen": "jpg/40.jpg",
+    "url": "pelicula /13.html",
+    "fecha": "2025",
+     "idioma": "la",
+     "genero": ["terror", "peliculas"]
+  },
+    {
+    "titulo": "Buenos días, tristeza",
+    "imagen": "jpg/41.jpg",
+    "url": "pelicula /14.html",
+    "fecha": "2025",
+    "idioma": "la",
+     "genero": ["drama", "romance", "peliculas"]
+  },
+   {
+    "titulo": "Demon Slayer: Kimetsu no Yaiba Castillo infinito",
+    "imagen": "jpg/44.jpg",
+    "url": "pelicula /17.html",
+    "fecha": "2025",
+    "idioma": "je",
+     "genero": ["accion", "fantasia", "suspenso", "animes", "peliculas"]
+  },
+  {
+    "titulo": "Saiyaara",
+    "imagen": "jpg/45.jpg",
+    "url": "pelicula /18.html",
+    "fecha": "2025",
+     "idioma": "la",
+     "genero": ["drama", "romance", "peliculas"]
+  },
+  {
+    "titulo": "El banco de Dave 2",
+    "imagen": "jpg/48.jpg",
+    "url": "pelicula /21.html",
+    "fecha": "2025",
+    "idioma": "es",
+     "genero": ["comedia", "drama", "peliculas"]
+  },
+    {
+    "titulo": "Fight or flight (sicarios en el aire)",
+    "imagen": "img/1.jpg",
+    "url": "pelicula /24.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["accion", "comedia", "suspenso", "peliculas"]
+  },
+  {
+    "titulo": "Jane Austen arruinó mi vida",
+    "imagen": "img/4.jpg",
+    "url": "se/2.html",
+    "fecha": "2025",
+    "idioma": "es",
+     "genero": ["drama", "comedia", "romance", "peliculas"]
+  },
+  {
+    "titulo": "Ramón y Ramón",
+    "imagen": "img/6.jpg",
+    "url": "se/4.html",
+    "fecha": "2025",
+      "idioma": "es",
+     "genero": ["drama", "peliculas"]
+  },
+    {
+    "titulo": "El otro París",
+    "imagen": "img/9.jpg",
+    "url": "se/6.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["comedia", "romance", "peliculas"]
+  },
+   {
+    "titulo": "El ultimo encargo",
+    "imagen": "img/19.jpg",
+    "url": "se/16.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["comedia", "accion", "crimen", "peliculas"]
+  },
+  {
+    "titulo": "Miedo en las profundidades",
+    "imagen": "img/20.jpg",
+    "url": "se/17.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["aventura", "accion", "suspenso", "terror", "peliculas"]
+  },
+  {
+    "titulo": "Guillermo Tell",
+    "imagen": "img/21.jpg",
+    "url": "se/18.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["drama", "accion", "peliculas"]
+  },
+    {
+    "titulo": "Leyendas de los heroes Condor: Los valientes",
+    "imagen": "img/22.jpg",
+    "url": "se/19.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["accion", "drama", "peliculas"]
+  },
+  {
+    "titulo": "Jurassic World: El renacer",
+    "imagen": "img/23.jpg",
+    "url": "se/20.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["accion", "aventura", "ciencia ficcion", "peliculas"]
+  },
+   {
+    "titulo": "Ciudadanos soberanos",
+    "imagen": "img/25.jpg",
+    "url": "se/22.html",
+    "fecha": "2025",
+      "idioma": "es",
+     "genero": ["crimen", "drama", "suspenso", "peliculas"]
+  },
+  {
+    "titulo": "Rust: La ley del oeste",
+    "imagen": "img/26.jpg",
+    "url": "se/23.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["accion", "peliculas"]
+  },
+    {
+    "titulo": "Osiris",
+    "imagen": "img/27.jpg",
+    "url": "se/24.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["accion", "ciencia ficcion", "terror", "peliculas"]
+  },
+   {
+    "titulo": "La venganza de Popeye",
+    "imagen": "img/28.jpg",
+    "url": "se/25.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["terror", "peliculas"]
+  },
+   {
+    "titulo": "El mismo dia contigo",
+    "imagen": "img/36.jpg",
+    "url": "se/36.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["comedia", "romance", "fantasia", "peliculas"]
+  },
+  {
+    "titulo": "Together: Juntos hasta la muerte",
+    "imagen": "img/37.jpg",
+    "url": "se/37.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["terror", "peliculas"]
+  },
+  {
+    "titulo": "Trust (Confianza)",
+    "imagen": "img/38.jpg",
+    "url": "se/38.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["suspenso", "peliculas"]
+  },
+  {
+    "titulo": "Los sudarios",
+    "imagen": "img/39.jpg",
+    "url": "se/39.html",
+    "fecha": "2025",
+      "idioma": "es",
+     "genero": ["suspenso", "ciencia ficcion", "drama", "terror", "peliculas"]
+  },
+  {
+    "titulo": "¿Y donde está el policia?",
+    "imagen": "img/40.jpg",
+    "url": "se/40.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["accion", "comedia", "crimen", "peliculas"]
+  },
+  {
+    "titulo": "Los Cuatro Fantasticos: Primeros pasos",
+    "imagen": "img/41.jpg",
+    "url": "se/41.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["aventura", "ciencia ficcion", "peliculas"]
+  },
+  {
+    "titulo": "Match: La reina de las apps de citas",
+    "imagen": "img/42.jpg",
+    "url": "se/42.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["drama", "peliculas"]
+  },
+    {
+    "titulo": "Sirat",
+    "imagen": "img/43.jpg",
+    "url": "se/43.html",
+    "fecha": "2025",
+      "idioma": "es",
+     "genero": ["drama", "suspenso", "peliculas"]
+  },
+  {
+    "titulo": "Erase una vez mi madre",
+    "imagen": "img/44.jpg",
+    "url": "se/44.html",
+    "fecha": "2025",
+      "idioma": "es",
+     "genero": ["drama", "comedia", "peliculas"]
+  },
+  {
+    "titulo": "Y ella dijo quizas",
+    "imagen": "img/45.jpg",
+    "url": "se/45.html",
+    "fecha": "2025",
+      "idioma": "la",
+     "genero": ["drama", "comedia", "romance", "peliculas"]
+  },
+    {
+    "titulo": "El señor de los anillos: La guerra de los Rohirrim",
+    "imagen": "jpg/El señor de los anillos.jpg",
+    "url": "peliculas anime/El señor.html",
+    "fecha": "2024",
+      "idioma": "la",
+    "genero": ["accion", "animes", "aventura", "fantasia", "peliculas"]
+  },
+  {
+    "titulo": "Solo leveling",
+    "imagen": "jpg/solo.jpg",
+    "url": "mashle/solo.html",
+     "fecha": "2024",
+      "idioma": "la",
+     "genero": ["animes", "accion", "aventura", "fantasia", "series"]
+  },
+  {
+      "titulo": "El juego de la tentación",
+    "imagen": "jpg/28.jpg",
+    "url": "peliculas anime/1.html",
+     "fecha": "2024",
+     "idioma": "la",
+     "genero": ["suspenso", "terror", "peliculas"]
+  },
+  {
+      "titulo": "Terror en un hospital psiquiatrico",
+    "imagen": "jpg/29.jpg",
+    "url": "peliculas anime/2.html",
+     "fecha": "2024",
+      "idioma": "la",
+     "genero": ["suspenso", "terror", "peliculas"]
+  },
+   {
+      "titulo": "Espiral de violencia",
+    "imagen": "jpg/32.jpg",
+    "url": "pelicula /5.html",
+     "fecha": "2024",
+      "idioma": "la",
+     "genero": ["suspenso", "accion", "peliculas", "crimen"]
+  },
+  {
+      "titulo": "El conjuro de la bruja",
+    "imagen": "jpg/36.jpg",
+    "url": "pelicula /9.html",
+     "fecha": "2024",
+      "idioma": "la",
+     "genero": ["suspenso", "accion", "peliculas", "terror"]
+  },
+  {
+      "titulo": "Un buen padre (Paternel)",
+    "imagen": "jpg/46.jpg",
+    "url": "pelicula /19.html",
+     "fecha": "2024",
+     "idioma": "la",
+     "genero": ["drama", "peliculas"]
+  },
+  {
+      "titulo": "Bonhoeffer: Pastor. Espía. Asesino.",
+    "imagen": "jpg/49.jpg",
+    "url": "pelicula /22.html",
+     "fecha": "2024",
+     "idioma": "la",
+     "genero": ["drama", "peliculas"]
+  },
+    {
+      "titulo": "Siempre Juntos",
+    "imagen": "jpg/50.jpg",
+    "url": "pelicula /23.html",
+     "fecha": "2024",
+     "idioma": "la",
+     "genero": ["drama", "comedia", "peliculas"]
+  },
+  {
+      "titulo": "Here Be Dragons",
+    "imagen": "img/2.jpg",
+    "url": "pelicula /25.html",
+     "fecha": "2024",
+     "idioma": "es",
+     "genero": ["drama", "suspenso", "peliculas"]
+  },
+  {
+      "titulo": "The End",
+    "imagen": "img/7.jpg",
+    "url": "se/5.html",
+     "fecha": "2024",
+     "idioma": "es",
+     "genero": ["drama", "peliculas"]
+  },
+  {
+      "titulo": "La promesa de Irene",
+    "imagen": "img/16.jpg",
+    "url": "se/13.html",
+     "fecha": "2024",
+       "idioma": "la",
+     "genero": ["drama", "peliculas"]
+  },
+  {
+      "titulo": "Lucha satanica",
+    "imagen": "img/17.jpg",
+    "url": "se/14.html",
+     "fecha": "2024",
+     "idioma": "la",
+     "genero": ["accion", "terror", "peliculas"]
+  },
+    {
+      "titulo": "Humane",
+    "imagen": "img/18.jpg",
+    "url": "se/15.html",
+     "fecha": "2024",
+     "idioma": "la",
+     "genero": ["ciencia ficcion", "suspenso", "terror", "peliculas"]
+  },
+  {
+      "titulo": "La joven Francesa",
+    "imagen": "img/24.jpg",
+    "url": "se/21.html",
+     "fecha": "2024",
+     "idioma": "la",
+     "genero": ["comedia", "romance", "peliculas"]
+  },
+  {
+      "titulo": "Anzu. Gato fantasma",
+    "imagen": "img/31.jpg",
+    "url": "se/28.html",
+     "fecha": "2024",
+     "idioma": "es",
+     "genero": ["comedia", "fantasia", "animes", "peliculas"]
+  },
+    {
+      "titulo": "Matanza sangrienta",
+    "imagen": "img/32.jpg",
+    "url": "se/29.html",
+     "fecha": "2024",
+     "idioma": "la",
+     "genero": ["accion", "crimen", "suspenso", "peliculas"]
+  },
+    {
+    "titulo": "Un universo entre nosotros",
+    "imagen": "jpg/26.jpg",
+    "url": "peliculas anime/los.html",
+     "fecha": "2023",
+      "idioma": "la",
+     "genero": ["peliculas","ciencia ficcion"]
+  },
+  {
+    "titulo": "Mashle",
+    "imagen": "jpg/mashle.jpg",
+    "url": "mashle/mashle.html",
+     "fecha": "2023",
+      "idioma": "la",
+     "genero": ["animes", "accion", "aventura", "comedia", "fantasia", "series"]
+  },
+  {
+  "titulo": "The Eminence in Shadow",
+  "imagen": "jpg/The Eminence in Shadow.jpg",
+  "url": "mashle/the eminencia.html",
+  "fecha": "2023",
+   "idioma": "la",
+  "genero": ["accion", "aventura", "animes", "comedia", "fantasia", "series"]
+},
+    {
+    "titulo": "La Asesina Inconsciente",
+    "imagen": "jpg/27.jpg",
+    "url": "mashle/fu.html",
+    "fecha": "2023", 
+     "idioma": "la",
+    "genero": ["suspenso", "peliculas"]
+     },
+     {
+    "titulo": "Sakra",
+    "imagen": "jpg/31.jpg",
+    "url": "pelicula /4.html",
+    "fecha": "2023",
+    "idioma": "la",
+    "genero": ["accion", "peliculas"]
+  },
+  {
+    "titulo": "Acompañante fatal",
+    "imagen": "jpg/38.jpg",
+    "url": "pelicula /11.html",
+    "fecha": "2023",
+    "idioma": "la",
+    "genero": ["crimen", "drama", "peliculas"]
+  },
+  {
+    "titulo": "Maldito 3: El amuleto",
+    "imagen": "jpg/39.jpg",
+    "url": "pelicula /12.html",
+    "fecha": "2023",
+     "idioma": "la",
+    "genero": ["terror", "peliculas"]
+  },
+    {
+    "titulo": "Infierno tropical",
+    "imagen": "jpg/43.jpg",
+    "url": "pelicula /15.html",
+    "fecha": "2023", 
+     "idioma": "la",
+    "genero": ["accion", "aventura", "drama", "suspenso", "terror", "misterio","peliculas"]
+     },
+       {
+    "titulo": "Operación 49",
+    "imagen": "jpg/42.jpg",
+    "url": "pelicula /16.html",
+    "fecha": "2023", 
+     "idioma": "la",
+    "genero": ["accion", "drama", "peliculas"]
+     },
+     {
+    "titulo": "Ladrón que roba a ladrón",
+    "imagen": "jpg/47.jpg",
+    "url": "pelicula /20.html",
+    "fecha": "2023", 
+    "idioma": "la",
+    "genero": ["misterio", "suspenso", "peliculas"]
+     },
+     {
+    "titulo": "El retorno de los muertos vivientes",
+    "imagen": "img/8.jpg",
+    "url": "se/7.html",
+    "fecha": "2023", 
+      "idioma": "la",
+    "genero": ["terror", "peliculas"]
+     },
+       {
+    "titulo": "Darkland: The Return",
+    "imagen": "img/10.jpg",
+    "url": "se/8.html",
+    "fecha": "2023", 
+      "idioma": "es",
+    "genero": ["accion", "suspenso", "peliculas"]
+     },
+     {
+    "titulo": "Nosotros o ellos",
+    "imagen": "img/12.jpg",
+    "url": "se/9.html",
+    "fecha": "2023", 
+    "idioma": "la",
+    "genero": ["accion", "suspenso", "peliculas"]
+     },
+       {
+    "titulo": "Butch vs. Sundance",
+    "imagen": "img/29.jpg",
+    "url": "se/26.html",
+    "fecha": "2023", 
+    "idioma": "es",
+    "genero": ["aventura", "peliculas"]
+     },
+     {
+    "titulo": "Pesadilla en la montaña",
+    "imagen": "img/34.jpg",
+    "url": "se/34.html",
+    "fecha": "2023", 
+    "idioma": "la",
+    "genero": ["suspenso", "terror", "peliculas"]
+     },
+     {
+    "titulo": "Encarcelado",
+    "imagen": "img/35.jpg",
+    "url": "se/35.html",
+    "fecha": "2023", 
+    "idioma": "la",
+    "genero": ["suspenso", "terror", "peliculas"]
+     },
+    {
+    "titulo": "Mi amiga es un extraterrestre",
+    "imagen": "jpg/35.jpg",
+    "url": "pelicula /8.html",
+    "fecha": "2022",
+     "idioma": "la",
+    "genero": ["ciencia ficcion", "comedia", "peliculas", "drama"]
+  },
+  {
+    "titulo": "Hypochondriac",
+    "imagen": "img/3.jpg",
+    "url": "se/1.html",
+    "fecha": "2022",
+    "idioma": "la",
+    "genero": ["drama", "terror", "peliculas"]
+  },
+    {
+    "titulo": "Project E.1337: ALPHA",
+    "imagen": "img/33.jpg",
+    "url": "se/33.html",
+    "fecha": "2022",
+    "idioma": "la",
+    "genero": ["ciencia ficcion", "peliculas"]
+  },
+   {
+    "titulo": "Merlina (Wednesday)",
+    "imagen": "img/mer.jpg",
+    "url": "mashle/merli.html",
+    "fecha": "2022",
+    "idioma": "la",
+    "genero": ["comedia", "misterio", "fantasia", "series"]
+  },
+  {
+    "titulo": "Arcane",
+    "imagen": "jpg/Arcane.jpg",
+    "url": "mashle/arcane.html",
+    "fecha": "2021",
+     "idioma": "la",
+    "genero": ["accion", "animes", "series"]
+  },
+    {
+    "titulo": "Dark",
+    "imagen": "img/11.jpg",
+    "url": "mashle/1.html",
+    "fecha": "2019",
+     "idioma": "la",
+    "genero": ["crimen", "drama", "misterio", "fantasia", "series"]
+  },
+  {
+    "titulo": "Hasta que te encontré",
+    "imagen": "jpg/37.jpg",
+    "url": "pelicula /10.html",
+    "fecha": "2018",
+     "idioma": "la",
+    "genero": ["romance", "drama", "peliculas"]
+  },
+  {
+    "titulo": "Un finde semana para matar",
+    "imagen": "img/5.jpg",
+    "url": "se/3.html",
+    "fecha": "2018",
+    "idioma": "la",
+    "genero": ["comedia", "terror", "peliculas"]
+  },
+  {
+    "titulo": "Lo mas importante de la vida",
+    "imagen": "img/30.jpg",
+    "url": "se/27.html",
+    "fecha": "2013",
+    "idioma": "la",
+    "genero": ["drama", "romance", "peliculas"]
+  },
+  {
+    "titulo": "American Playboy",
+    "imagen": "jpg/34.jpg",
+    "url": "pelicula /7.html",
+    "fecha": "2009",
+     "idioma": "la",
+    "genero": ["comedia", "romance", "peliculas"]
+  },
+    {
+    "titulo": "Regreso al futuro III (Volver al Futuro 3)",
+    "imagen": "img/15.jpg",
+    "url": "se/12.html",
+    "fecha": "1990",
+    "idioma": "la",
+    "genero": ["comedia", "ciencia ficcion", "aventura", "peliculas"]
+  },
+    {
+    "titulo": "Regreso al futuro II (Volver al Futuro 2)",
+    "imagen": "img/14.jpg",
+    "url": "se/11.html",
+    "fecha": "1989",
+    "idioma": "la",
+    "genero": ["comedia", "ciencia ficcion", "aventura", "peliculas"]
+  },
+  {
+    "titulo": "Regreso al futuro (Volver al Futuro)",
+    "imagen": "img/13.jpg",
+    "url": "se/10.html",
+    "fecha": "1985",
+    "idioma": "la",
+    "genero": ["comedia", "aventura", "ciencia ficcion", "peliculas"]
+  }
+]
